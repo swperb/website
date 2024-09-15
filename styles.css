@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Immortal';
+    src: url('/fonts/immortal/IMMORTAL.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Immortal', serif;
+}
+
+body {
+    background-image: url('/media/pngtree-black-texture-background-simple-image_556950.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ff0000;
+}
+
+.wizard-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.walking-wizard {
+    position: absolute;
+    bottom: -15px;
+    width: 80px;
+    height: auto;
+    animation: walkAcross 20s infinite linear;
+    animation-fill-mode: none;
+}
+
+@keyframes walkAcross {
+    0% {
+        left: -100px;
+        transform: scaleX(-1);
+    }
+
+    49% {
+        left: calc(100vw);
+        transform: scaleX(-1);
+    }
+
+    50% {
+        left: calc(100vw);
+        transform: scaleX(1);
+    }
+
+    100% {
+        left: -100px;
+    }
+
+}
