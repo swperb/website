@@ -6,8 +6,47 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Noto Sans Mono';
+    src: url('/fonts/Noto_Sans_Mono/NotoSansMono-VariableFont_wdth\,wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1 {
     font-family: 'Immortal', serif;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10px;
+
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+    font-family: 'Noto Sans Mono', serif;
+    font-size: large;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    padding-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
 }
 
 body {
